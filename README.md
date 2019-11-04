@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Coding challenge for 412 Food Rescue
 
-Things you may want to cover:
+#### Ruby version ruby 2.6.1
 
-* Ruby version
+### Models created
+* Board
+* Game
+* Player
+* Ship
 
-* System dependencies
+#### I pseudo coded methods I think we'll need for the game to have some basic functionality with names and parameters .
 
-* Configuration
+#### I generated scaffolds for all models to get it up and started.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
