@@ -1,28 +1,16 @@
 class ShipsController < ApplicationController
   before_action :set_ship, only: [:show, :edit, :update, :destroy]
 
-  # GET /ships
-  # GET /ships.json
   def index
     @ships = Ship.all
   end
 
-  # GET /ships/1
-  # GET /ships/1.json
   def show
   end
 
-  # GET /ships/new
-  def new
-    @ship = Ship.new
-  end
-
-  # GET /ships/1/edit
   def edit
   end
 
-  # POST /ships
-  # POST /ships.json
   def create
     @ship = Ship.new(ship_params)
 
@@ -37,8 +25,6 @@ class ShipsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /ships/1
-  # PATCH/PUT /ships/1.json
   def update
     respond_to do |format|
       if @ship.update(ship_params)
@@ -51,8 +37,6 @@ class ShipsController < ApplicationController
     end
   end
 
-  # DELETE /ships/1
-  # DELETE /ships/1.json
   def destroy
     @ship.destroy
     respond_to do |format|
@@ -62,12 +46,10 @@ class ShipsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_ship
       @ship = Ship.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def ship_params
       params.require(:ship).permit(:name)
     end
